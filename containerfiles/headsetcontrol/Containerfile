@@ -1,0 +1,9 @@
+WORKDIR /tmp
+RUN dnf group install -y "Development tools"
+RUN dnf install -y cmake hidapi-devel g++
+RUN git clone https://github.com/Sapd/HeadsetControl && \
+    cd HeadsetControl && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make

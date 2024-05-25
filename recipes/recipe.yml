@@ -8,6 +8,15 @@ description: My personal Fedora Silverblue image based on universal-blue main im
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 40 # latest is also supported if you want new updates ASAP
 
+# stages. See: https://github.com/blue-build/cli/pull/173
+stages:
+  - name: headsetcontrol
+    from: fedora:40
+    modules:
+      - type: containerfile
+        containerfiles:
+          - headsetcontrol
+
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
@@ -51,6 +60,9 @@ modules:
       - hplip
       - sane-backends-drivers-scanners
       - simple-scan
+
+      # Needed by headsetcontrol
+      - hidapi
     remove:
       # removing default gnome-terminal in favour of tilix
       - gnome-terminal
@@ -59,6 +71,16 @@ modules:
       # default firefox removed in favor of flatpak
       - firefox
       - firefox-langpacks
+
+  - type: copy
+    from: headsetcontrol
+    src: /tmp/HeadsetControl/build/headsetcontrol
+    dest: /usr/bin/headsetcontrol
+
+  - type: copy
+    from: headsetcontrol
+    src: /tmp/HeadsetControl/build/70-headsets.rules
+    dest: /lib/udev/rules.d/70-headsets.rules
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
