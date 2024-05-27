@@ -43,10 +43,7 @@ modules:
       - gnome-clocks
       - nextcloud-client
       - nextcloud-client-nautilus
-      - https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/fedora/fedora-39-x86_64/libpq5-16.2-42PGDG.f39.x86_64.rpm
       - https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/fedora/fedora-39-x86_64/pgadmin4-8.6-1.fc39.noarch.rpm
-      - https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/fedora/fedora-39-x86_64/pgadmin4-desktop-8.6-1.fc39.x86_64.rpm
-      - https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/fedora/fedora-39-x86_64/postgresql15-libs-15.6-1PGDG.f39.x86_64.rpm
 
       # Tilix as default terminal
       - tilix
