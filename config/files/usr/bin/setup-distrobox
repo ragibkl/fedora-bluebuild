@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mkdir -p ~/.distrobox-homes/default
+distrobox assemble create --replace --file /usr/share/distrobox/distrobox.ini
