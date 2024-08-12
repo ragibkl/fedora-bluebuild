@@ -86,16 +86,19 @@ modules:
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       install:
+        - com.github.iwalton3.jellyfin-media-player
         - com.google.Chrome
         - com.mattjakeman.ExtensionManager
         - com.slack.Slack
         - com.visualstudio.code
+        - eu.scarpetta.PDFMixTool
         - org.gnome.Evince
         - org.gnome.Loupe
         - org.gnome.Snapshot
         - org.gnome.TextEditor
         - org.libreoffice.LibreOffice
         - org.mozilla.firefox
+        - org.videolan.VLC
         - rest.insomnia.Insomnia
       remove:
         - org.gnome.Extensions
