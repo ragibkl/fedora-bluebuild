@@ -103,10 +103,10 @@ modules:
 
   - type: gnome-extensions
     install:
-      - appindicatorsupportrgcjonas.gmail.com.v58
-      - caffeinepatapon.info.v54
-      - dockerstickman_0x00.com.v33
-      - HeadsetControllauinger-clan.de.v30
-      - world_clock_liteailin.nemui.v29
+      - AppIndicator and KStatusNotifierItem Support
+      - Caffeine
+      - Docker
+      - HeadsetControl
+      - Panel World Clock (Lite)
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
