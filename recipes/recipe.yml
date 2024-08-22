@@ -8,6 +8,10 @@ description: My personal Fedora Silverblue image based on universal-blue main im
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 40 # latest is also supported if you want new updates ASAP
 
+# the tags to use
+alt-tags:
+  - latest
+
 # stages. See: https://github.com/blue-build/cli/pull/173
 stages:
   - name: headsetcontrol
