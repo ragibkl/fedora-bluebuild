@@ -15,7 +15,7 @@ alt-tags:
 # stages. See: https://github.com/blue-build/cli/pull/173
 stages:
   - name: headsetcontrol
-    from: fedora:40
+    from: fedora:42
     modules:
       - type: containerfile
         containerfiles:
