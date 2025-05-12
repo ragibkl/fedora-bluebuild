@@ -73,8 +73,8 @@ modules:
       - qemu-kvm
     remove:
       # removing default gnome-terminal in favour of tilix
-      - gnome-terminal
-      - gnome-terminal-nautilus
+      # - gnome-terminal
+      # - gnome-terminal-nautilus
 
       # default firefox removed in favor of flatpak
       - firefox
