@@ -1,4 +1,4 @@
 #!/bin/sh
 
-mkdir -p ~/.distrobox-homes/default
+mkdir -p ~/.distrobox-homes/fedora
 distrobox assemble create --replace --file /usr/share/distrobox/distrobox.ini
