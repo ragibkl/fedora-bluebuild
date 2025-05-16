@@ -72,10 +72,6 @@ modules:
       - libvirt
       - qemu-kvm
     remove:
-      # removing default gnome-terminal in favour of tilix
-      # - gnome-terminal
-      # - gnome-terminal-nautilus
-
       # default firefox removed in favor of flatpak
       - firefox
       - firefox-langpacks
@@ -99,7 +95,9 @@ modules:
         - com.mattjakeman.ExtensionManager
         - com.slack.Slack
         - com.visualstudio.code
+        - dev.zed.Zed
         - eu.scarpetta.PDFMixTool
+        - org.gnome.Calculator
         - org.gnome.Evince
         - org.gnome.Loupe
         - org.gnome.Snapshot
