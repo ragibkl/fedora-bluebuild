@@ -45,6 +45,7 @@ modules:
     install:
       # Some GUI apps on host for better integration
       - gnome-clocks
+      - gnome-tweaks
       - nextcloud-client
       - nextcloud-client-nautilus
       - https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/fedora/fedora-39-x86_64/pgadmin4-8.6-1.fc39.noarch.rpm
