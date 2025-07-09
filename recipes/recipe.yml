@@ -72,6 +72,9 @@ modules:
       # Needed by Docker-OSX
       - libvirt
       - qemu-kvm
+
+      # Logitech receiver
+      - solaar
     remove:
       # default firefox removed in favor of flatpak
       - firefox
