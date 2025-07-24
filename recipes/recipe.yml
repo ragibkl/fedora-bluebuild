@@ -46,9 +46,10 @@ modules:
       # Some GUI apps on host for better integration
       - gnome-clocks
       - gnome-tweaks
+      - https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/fedora/fedora-42-x86_64/pgadmin4-9.5-1.fc42.noarch.rpm
       - nextcloud-client
       - nextcloud-client-nautilus
-      - https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/fedora/fedora-39-x86_64/pgadmin4-8.6-1.fc39.noarch.rpm
+      - xournal
 
       # Tilix as default terminal
       - tilix
