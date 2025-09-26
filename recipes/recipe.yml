@@ -71,10 +71,10 @@ modules:
 
       # Logitech receiver
       - solaar
-    remove:
-      # default firefox removed in favor of flatpak
-      - firefox
-      - firefox-langpacks
+    # remove:
+    # default firefox removed in favor of flatpak
+    # - firefox
+    # - firefox-langpacks
 
   # - type: copy
   #   from: headsetcontrol
@@ -104,12 +104,12 @@ modules:
           - org.gnome.Snapshot
           - org.gnome.TextEditor
           - org.libreoffice.LibreOffice
-          - org.mozilla.firefox
+          # - org.mozilla.firefox
           - org.videolan.VLC
           - rest.insomnia.Insomnia
-        remove:
-          - org.gnome.Extensions
-          - org.gnome.Totem
+        # remove:
+        #   - org.gnome.Extensions
+        #   - org.gnome.Totem
 
   # - type: gnome-extensions
   #   install:
