@@ -27,12 +27,12 @@ modules:
   - type: files
     files:
       # copy static configurations
-      # - source: usr
-      #   destination: /usr
-      # - source: rpm-gpg
-      #   destination: /etc/pki/rpm-gpg
-      # - source: yum.repos.d
-      #   destination: /etc/yum.repos.d
+      - source: usr
+        destination: /usr
+      - source: rpm-gpg
+        destination: /etc/pki/rpm-gpg
+      - source: yum.repos.d
+        destination: /etc/yum.repos.d
 
   - type: rpm-ostree
     repos:
@@ -76,15 +76,15 @@ modules:
     # - firefox
     # - firefox-langpacks
 
-  # - type: copy
-  #   from: headsetcontrol
-  #   src: /tmp/HeadsetControl/build/headsetcontrol
-  #   dest: /usr/bin/headsetcontrol
+  - type: copy
+    from: headsetcontrol
+    src: /tmp/HeadsetControl/build/headsetcontrol
+    dest: /usr/bin/headsetcontrol
 
-  # - type: copy
-  #   from: headsetcontrol
-  #   src: /tmp/HeadsetControl/build/70-headsets.rules
-  #   dest: /lib/udev/rules.d/70-headsets.rules
+  - type: copy
+    from: headsetcontrol
+    src: /tmp/HeadsetControl/build/70-headsets.rules
+    dest: /lib/udev/rules.d/70-headsets.rules
 
   - type: default-flatpaks
     configurations:
